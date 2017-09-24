@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Logowanie Google
+  body
+    #box  Pug - Google Log in application
+    form(action='http://localhost:3000//auth/google')
+      p
+        | Username:
+        input(type='text', name='username', required)
+      p
+        | Password:
+        input(type='password', name='password', required)
+      input(type='submit', value='Login')
